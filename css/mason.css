@@ -1,0 +1,94 @@
+.masonic-intro {
+  position: relative;
+  top: 60px;
+  /* width: 80vw;  */
+  width: 100%;
+  max-width: 100%;
+  margin: 1rem auto;
+  padding-bottom: 2rem;
+  padding-top: 50px;
+  background: var(--bg);
+  /* box-shadow: 0 0 20px rgba(0,0,0,0.1); */
+  font-family: 'Georgia', serif;
+  color: var(--text-color-t1);
+}
+
+.masonic-container {
+  outline: 3px solid firebrick;
+  max-width: 1200px;
+  width: 100%;
+   margin: 0 auto;
+  padding: 0 1rem;
+}
+  
+  
+
+.masonic-header {
+  position: relative;
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
+  
+}
+
+.masonic-header i {
+  font-size: 2rem;
+  color: var(--color-accent);
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.masonic-header i:hover {
+  transform: rotate(15deg) scale(1.2);
+}
+.masonic-header h3 {
+  
+  margin: 0.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.masonic-header .subtitle {
+  font-size: 1.1rem;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  color: var(--text-color-t1);
+}
+
+.masonic-body p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.masonic-body blockquote {
+  font-size: 1.25rem;
+  font-style: italic;
+  margin: 1rem 0;
+  padding-left: 1rem;
+  /* border-left: 4px solid var(--color-accent); */
+}
+
+.virtues {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+  margin-top: 2.75rem;
+}
+
+.virtues li {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.virtues li i {
+  transition: transform 0.3s ease;
+}
+.virtues li:hover i {
+  transform: scale(1.3);
+}

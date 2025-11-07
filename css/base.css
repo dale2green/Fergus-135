@@ -1,0 +1,197 @@
+:root {
+  --bg: #276cf5;
+  --bg1: #d1d1d1;
+  --bg-header: #276CF5;
+  --text-color-base:#fff;
+  --text-color-t1: black;
+  --color-text-muted: #e0e0e0;
+  --color-accent: black;
+}
+
+
+/*
+colors: a bg color #2c3e50
+*/
+
+
+
+* {
+  padding: 0 0 0 0 ;
+  border: 0;
+  margin: 0;
+}
+
+
+/*  Responsive Page sizing */
+
+
+@media (max-width: 900px) {
+  .carousel-wrapper {
+    width: 100%;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 0.5rem 1rem;
+  }
+
+   .nav-toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  .navbar-nav {
+    display: none;
+    /* width: 100%; */
+  }
+
+  .navbar-nav.active {
+    display: block;
+  }
+/* or toggle styling in small screen */
+  .nav-items-wrapper {
+    background-color: var(--bg1);
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+  }
+
+  .main-menu {
+    flex-direction: column;
+    /* width: 100%; */
+    padding: 0;
+  }
+
+  .nav-item {
+    padding: 10px 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .logo-one {
+    margin-bottom: 0.5rem;
+  }
+}
+
+
+@media (min-width: 390px) and (max-width: 600px) {
+  .virtues {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 0;
+    align-items: center;
+  }
+
+  .virtues li {
+    font-size: 1rem;
+    gap: 0.5rem;
+  }
+
+
+  .mason-cards {
+    flex: 0 0 180px;
+    width: 180px;
+  }
+
+  .main-pic img {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .masonic-header,
+  .masonic-body,
+  .hero-text,
+  .hero-section {
+    text-align: center;
+    width: 95%;
+  }
+
+    .masonic-header h3 {
+    font-size: 2rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .masonic-header i {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .subtitle,
+  .hero-text p,
+  .masonic-body blockquote {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+  .hero-text p,
+  .masonic-body blockquote {
+    font-size: 1rem;
+    text-align: center;
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+.masonic-intro {
+  overflow-x: hidden;
+  width:100%;
+  max-width: 100%;
+}
+
+  .lodge-events {
+    padding: 1rem;
+  }
+
+  .event-card {
+    padding: 1rem 0;
+  }
+  .officer-list .chairs {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .carousel-wrapper {
+    padding: 0 1rem;
+  }
+  .icons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .social-media h3 {
+    font-size: 1rem;
+  }
+
+
+  }
+
+
+
+
+/* fade in for event cards */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
