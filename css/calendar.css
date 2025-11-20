@@ -11,6 +11,9 @@
   margin-bottom: 2rem;
   color: var(--text-color-t1);
 }
+.calendar-wrapper p {
+  text-align: center
+}
 
 /* 🔹 Event Cards */
 .calendar-card {
@@ -115,4 +118,5 @@
   .calendar-card p {
     font-size: 0.95rem;
   }
+
 }
