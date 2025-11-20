@@ -1,0 +1,111 @@
+/* 🔹 Blog Wrapper */
+.blog-wrapper {
+  padding: 6rem 1rem 3rem;
+  background-color: var(--bg);
+  font-family: 'Georgia', serif;
+}
+
+.blog-wrapper h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--text-color-t1);
+}
+
+/* 🔹 Blog Card Layout */
+.blog-card {
+  background-color: var(--bg1);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 700px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.blog-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-color-t2);
+}
+
+.blog-date {
+  font-size: 0.95rem;
+  color: var(--text-color-t3);
+  margin-bottom: 1rem;
+}
+
+.blog-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color-t3);
+  margin-bottom: 1rem;
+}
+
+.read-more {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--bg);
+  color: var(--text-color-t1);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: #1a252f;
+}
+
+/* 🔹 FAQ Section (if used in blog) */
+.faq-section {
+  background-color: var(--bg1);
+  padding: 1.5rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.faq-section h4 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #34495e;
+  text-align: center;
+}
+
+.faq-list {
+  list-style: none;
+  padding: 0;
+}
+
+.faq-list li {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #2c3e50;
+}
+
+/* 🔹 Animation */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🔹 Responsive */
+@media (max-width: 600px) {
+  .blog-card {
+    padding: 1rem;
+  }
+
+  .blog-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .blog-card p,
+  .read-more {
+    font-size: 0.95rem;
+  }
+}

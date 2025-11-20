@@ -1,6 +1,6 @@
 :root {
   --bg: #276cf5;
-  --bg1: #d1d1d1;
+  --bg1: #f0f0f0;
   --bg-header: #276CF5;
   --text-color-base:#fff;
   --text-color-t1: black;
@@ -19,6 +19,22 @@ colors: a bg color #2c3e50
   padding: 0 0 0 0 ;
   border: 0;
   margin: 0;
+}
+
+
+#dues-section,
+#about-section {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+/* nav click links for proper margin */
+#home-section,
+#dues-section,
+#officer-section,
+#about-section,
+#links {
+  scroll-margin-top: 6rem;
 }
 
 

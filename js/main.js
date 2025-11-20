@@ -1,18 +1,17 @@
-
+//
 document.addEventListener("DOMContentLoaded", () => {
+  // 🔹 Nav Toggle
   const toggle = document.querySelector(".nav-toggle");
   const nav = document.querySelector(".navbar-nav");
-
+  if (toggle && nav) {
   toggle.addEventListener("click", () => {
     nav.classList.toggle("active");
   });
-});
+  }
 
 
-
-
-document.addEventListener("DOMContentLoaded", () => {
-  // Officer List Rendering
+  // 🔹 Officer List
+  //  CHANGE the NAMES ONLY--NOTHING E
   const officers = [
     { title: "Worshipful Master", name: "Michael Bacon" },
     { title: "Senior Warden", name: "Dale Green" },
@@ -30,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   ];
 
   const officerList = document.getElementById("officer-list");
+  if (officerList) {
   officers.forEach(officer => {
     if (!officer.name) return;
     const li = document.createElement("li");
@@ -37,8 +37,9 @@ document.addEventListener("DOMContentLoaded", () => {
     li.innerHTML = `<strong>${officer.title}</strong>: ${officer.name}`;
     officerList.appendChild(li);
   });
+  }
 
-  // Carousel Looping Scroll
+  // 🔹 Carousel Scroll
   const carousel = document.querySelector(".org-carousel");
   const rightBtn = document.querySelector(".scroll-btn.right");
   const leftBtn = document.querySelector(".scroll-btn.left");
